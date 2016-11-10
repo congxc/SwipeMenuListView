@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rainnshieh.MainActivity">
+    <com.rainnshieh.views.PullToRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.rainnshieh.views.SwipeMenuListView
+            android:id="@+id/swipemenuListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.rainnshieh.views.PullToRefreshLayout>
+
+
+</LinearLayout>
