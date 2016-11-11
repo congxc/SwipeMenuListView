@@ -15,7 +15,7 @@
             mSwipeMenuListView.setAdapter(mCommonAdapter);
 2.PullToRefreshLayout 万能的上拉加载更多 下拉刷新控件 让你的ListView  implements Pullable ，
   可以方便的通过setPullUpEnable(boolean)或者setPullDownEnable(boolean)控制是否可以上拉或下拉
-    <com.rainnshieh.views.PullToRefreshLayout
+    “<com.rainnshieh.views.PullToRefreshLayout
             android:id="@+id/refreshlayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -23,6 +23,6 @@
                 android:id="@+id/swipemenuListView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
-        </com.rainnshieh.views.PullToRefreshLayout>
+        </com.rainnshieh.views.PullToRefreshLayout>”
 
 3.解决baoyz的SwipeMenuListView控件使用CommonAdapter时滑出控件类型不一致的bug
