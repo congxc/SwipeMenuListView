@@ -1,19 +1,19 @@
 #1.使用 CommonAdapter+ViewHolder：<br>
 ```
    mCommonAdapter = new CommonAdapter<String>(this,mDatas,R.layout.item_view) {
-       @Override<br>
-       public void convert(ViewHolder holder, String s) {<br>
-            holder.setText(R.id.tv,holder.getPosition()+"----"+s)<br>
-                  .setBackgroundRes(R.id.tv,R.drawable.icon_arrow)<br>
-                  .setOnClickListener(R.id.tv, new View.OnClickListener() {<br>
-                       @Override<br>
-                       public void onClick(View v) {<br>
-<br>
-                       }<br>
-             });<br>
-        }<br>
-   };<br>
-            mSwipeMenuListView.setAdapter(mCommonAdapter);<br>
+       @Override
+       public void convert(ViewHolder holder, String s) {
+            holder.setText(R.id.tv,holder.getPosition()+"----"+s)
+                  .setBackgroundRes(R.id.tv,R.drawable.icon_arrow)
+                  .setOnClickListener(R.id.tv, new View.OnClickListener() {
+                       @Override
+                       public void onClick(View v) {
+
+                       }
+             });
+        }
+   };
+            mSwipeMenuListView.setAdapter(mCommonAdapter);
  ```
 #2.PullToRefreshLayout 万能的上拉加载更多 下拉刷新控件 让你的ListView  implements Pullable ，<br>
   可以方便的通过setPullUpEnable(boolean)或者setPullDownEnable(boolean)控制是否可以上拉或下拉<br>
